@@ -14,7 +14,7 @@ print(type(z))
 a = 56e8
 print(a)
 
-# Type Conversion
+# Type Conversion or casting
 b = float(x)
 c = int(y)
 d = complex(x)
