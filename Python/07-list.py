@@ -24,8 +24,22 @@ print(thislist[2:5])    # // Return List from middle
 print(thislist[:5])    # // Return List from first to given number
 print(thislist[2:])    # // Return List from given number to last
 
-# Inserting List Item
+# Change List Item
 thislist[1] = "pineapple"
 thislist[2:3] = ["watermelon"]
 thislist.insert(1, "cherry")
 print(thislist) 
+
+# Add List Items
+thislist.append("orange")
+thislist.extend(mylist)
+print(thislist)
+
+# Removing List Items 
+thislist.remove("cherry")
+thislist.pop(1)     # Will remove the specified index item
+thislist.pop()      # Will remove the last item
+del thislist[0]     # Will remove the indexed item
+# del thislist      # Will remove the list completely
+# thislist.clear()  # Will clear the whole list
+print(thislist)
