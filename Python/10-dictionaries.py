@@ -29,3 +29,16 @@ z = thisdict.values()       # The values() method will return a list of all the 
 q = thisdict.items()        # The items() method will return each item in a dictionary, as tuples in a list.
 
 print(y, z, q)
+
+
+# * Change values 
+thisdict["year"] = 2018
+thisdict.update({"year": 2020})
+print(thisdict)
+
+# * Removing Items: 
+thisdict2.pop("country")        # The pop() method removes the item with the specified key name
+thisdict2.popitem()     #The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead)
+del thisdict2["name"]       # The del keyword removes the item with the specified key name
+thisdict.clear()        # The clear() method empties the dictionary
+print(thisdict2)
