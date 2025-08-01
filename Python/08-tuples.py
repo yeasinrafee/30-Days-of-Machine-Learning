@@ -40,3 +40,16 @@ z = list(tup1)
 z.remove("Pen")
 tup1 = tuple(z)
 print(tup1)
+
+
+# Unpacking Tuple 
+colors = ("Red", "Green", "Yellow", "Black", "White")
+# (car, tree, sun, tv, board) = colors
+# print(car)
+# print(tree)
+# print(board)
+
+(car, tree, *tv) = colors
+print(car)
+print(tree)
+print(tv)
