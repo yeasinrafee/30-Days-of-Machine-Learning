@@ -40,5 +40,10 @@ print(thisdict)
 thisdict2.pop("country")        # The pop() method removes the item with the specified key name
 thisdict2.popitem()     #The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead)
 del thisdict2["name"]       # The del keyword removes the item with the specified key name
-thisdict.clear()        # The clear() method empties the dictionary
+thisdict2.clear()        # The clear() method empties the dictionary
+print(thisdict2)
+
+# * Copy Dictionary
+thisdict2 = thisdict.copy()
+thisdict2 = dict(thisdict)
 print(thisdict2)
