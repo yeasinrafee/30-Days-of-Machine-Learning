@@ -21,3 +21,28 @@ for x in thisset:
 
 print(24 in set1)
 print(24 not in set1)
+
+# *Add Set Items:
+thisset.add("HongaPonga")
+print(thisset)
+
+myset.update(set1)
+print(myset)
+
+
+# *Remove Set items:
+
+thisset.remove("Rafee")
+print(thisset)
+# If the item to remove does not exist, remove() will raise an error.
+
+thisset.discard("HongaPonga")
+print(thisset)
+# If the item to remove does not exist, discard() will NOT raise an error
+
+x = set1.pop()
+print(x)
+print(set1)
+
+# thisset.clear()       # This will empties the set
+# del this              # This will delete the set completely
