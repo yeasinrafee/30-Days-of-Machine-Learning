@@ -1,3 +1,4 @@
+import numpy as np
 print("Enter your name: ")
 name = input()
 print(f"Hello {name}")
